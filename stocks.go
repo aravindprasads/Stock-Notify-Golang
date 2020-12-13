@@ -21,8 +21,8 @@ var StockData []Stock
 var DummyUserName = "dummy"
 
 func HomeHandler(w http.ResponseWriter, r *http.Request) {
-	t, err := template.ParseFiles("templates/stocks.html") //parse the html file homepage.html
-	if err != nil {                                        // if there is an error
+	t, err := template.ParseFiles("stocks.html") //parse the html file homepage.html
+	if err != nil {                              // if there is an error
 		log.Print("template parsing error: ", err) // log it
 	}
 	//fmt.Println(StockData)
